@@ -12,6 +12,9 @@ import { ScienzeDelleCostruzioniComponent } from './scienze-delle-costruzioni/sc
 import { ConferencesComponent } from './conferences/conferences.component';
 import { LectureSlidesComponent } from './lecture-slides/lecture-slides.component';
 import { NollComponent } from './noll/noll.component';
+import {MatIconModule} from "@angular/material/icon";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatSidenavModule} from "@angular/material/sidenav";
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { NollComponent } from './noll/noll.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,10 +1,27 @@
-@media (min-width: 768px) {
-    .md\:ml-800 {
-        margin-left: 800px
+@media (min-width: 820px) {
+    .md\:ml-300 {
+        margin-left: 300px
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
     .md\:mr-350 {
         margin-right: 350px;
     }
 }
+@media only screen and (device-width: 768px) {
+  .mIpad\:ml-250 {
+    margin-left: 250px;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  .md\:margini_auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+  @media only screen and (device-width: 540px) {
+    .md\:margini_surfaceDuo {
+      margin-left: 150px;
+    }
+  }
+
