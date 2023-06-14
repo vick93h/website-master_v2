@@ -6,6 +6,7 @@ import {LectureNotesComponent} from "./lecture-notes/lecture-notes.component";
 import { ScienzeDelleCostruzioniComponent } from './scienze-delle-costruzioni/scienze-delle-costruzioni.component';
 import { ConferencesComponent } from './conferences/conferences.component';
 import { LectureSlidesComponent } from './lecture-slides/lecture-slides.component';
+import { NollComponent } from './noll/noll.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full'},
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'scienzeDelleCostruzioni', component:ScienzeDelleCostruzioniComponent },
   { path: 'conferences', component: ConferencesComponent },
   { path: 'lectureSlides', component: LectureSlidesComponent },
+  { path: 'noll_s', component: NollComponent },
   {path:'Home', component: HomeComponent}];
 
 @NgModule({

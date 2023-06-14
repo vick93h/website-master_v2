@@ -1,16 +1,4 @@
-.navbar-nav > li{
-  padding-left:20px;
-  padding-right:20px;
+.active {
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
-.navbar-custom {
-            background-color:teal;
-        }
-        /* Modify brand and text color */
-
-        .navbar-custom .navbar-brand,
-        .navbar-custom .navbar-text {
-            color: white !important;
-        }
-nav .navbar-nav li a{
-  color: white !important;
-  }
