@@ -15,7 +15,11 @@ import { NollComponent } from './noll/noll.component';
 import {MatIconModule} from "@angular/material/icon";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatSidenavModule} from "@angular/material/sidenav";
-
+import {MatCardModule} from "@angular/material/card";
+import { MatButtonModule } from "@angular/material/button";
+import { MatMenuModule } from "@angular/material/menu";
+import { MatDividerModule } from "@angular/material/divider";
+import { FlexLayoutModule } from "@angular/flex-layout";
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +38,11 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     BrowserAnimationsModule,
     MatIconModule,
     MatToolbarModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatCardModule,
+    MatDividerModule,
+    FlexLayoutModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
