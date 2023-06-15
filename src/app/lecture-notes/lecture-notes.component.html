@@ -1,5 +1,5 @@
-<!--<p class="not-italic ... text-xl ... font-semibold ... text-center ... text-teal-800 ... my-5">Lecture Notes</p>
-<div class="container text-center">
+<p class="not-italic ... text-xl ... font-semibold ... text-center ... text-teal-800 ... my-5">Lecture Notes</p>
+<!--<div class="container text-center">
   <div class="row" style="margin-left: 4rem !important;">
 <div class="col-2 card text-center mb-3" style="width: 18rem;">
   <div class="card-body">
@@ -35,16 +35,17 @@
   </div>
 </div>
 -->
-<div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+<div class="content" fxLayout="row wrap" fxLayoutGap="70px grid">
   <div
     [fxFlex]="(100/gridColumns) + '%'"
     fxFlex.xs="100%"
-    fxFlex.sm="33%"
+    fxFlex.sm="50%"
+    fxLayout="row" fxLayoutAlign="stretch"
     *ngFor="let num of title"
   >
-    <mat-card class="mat-elevation-z4 title_center">
+    <mat-card class="mat-elevation-z4 title_center" >
       <mat-card-header>
-        <mat-card-title>{{num}}</mat-card-title>
+        <mat-card-title fxLayout="row" fxLayoutAlign="stretch">{{num}}</mat-card-title>
       </mat-card-header>
       <img mat-card-image src="/assets/HomeImage/pdf.png" width="64" height="64"/>
       <mat-card-content>
@@ -54,7 +55,11 @@
       </mat-card-content>
       <mat-card-actions>
         <div fxFlex></div>
+        <!--
+        <div fxFlex></div>
         <button mat-raised-button color="success">Dowload</button>
+        <div fxFlex></div>-->
+        <a href="/assets/GioBook/spazi.pdf" class="btn btn-primary">Dowload</a>
         <div fxFlex></div>
       </mat-card-actions>
     </mat-card>
