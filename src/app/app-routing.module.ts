@@ -12,6 +12,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full'},
+  {path:'Home', component: HomeComponent},
   {path:'log-In',component:LogInComponent},
   {path:'lectureNotes',component:LectureNotesComponent},
   { path: 'scienzeDelleCostruzioni', component:ScienzeDelleCostruzioniComponent },
@@ -19,9 +20,9 @@ const routes: Routes = [
   { path: 'lectureSlides', component: LectureSlidesComponent },
   { path: 'selectedPubblications', component: SelectedPublicationsComponent },
   { path: 'noll_s', component: NollComponent },
-  //{ path: '**', redirectTo: '/errore', pathMatch: 'full' },
-  {path:'errore',component:NotFoundComponent},
-  {path:'Home', component: HomeComponent}];
+  { path: '**', redirectTo: '/errore', pathMatch: 'full' },
+  {path:'errore',component:NotFoundComponent}
+ ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
