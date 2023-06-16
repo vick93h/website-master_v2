@@ -28,12 +28,12 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar class="mat-teal">
       <header>
         <label></label>
         <nav>
           <a routerLink="/Home" routerLinkActive="active">Home</a>
-          <a routerLink="about" routerLinkActive="active">Selected Publications</a>
+          <a routerLink="/selectedPubblications" routerLinkActive="active">Selected Publications</a>
           <a routerLink="/lectureNotes" routerLinkActive="active">Lecture Notes</a>
           <a routerLink="/scienzeDelleCostruzioni" routerLinkActive="active">Scienze Delle Costruzioni</a>
           <a routerLink="/conferences" routerLinkActive="active">Conferences,Symposia&Mettings</a>
@@ -42,6 +42,34 @@
         </nav>
         <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
       </header>
+       <span class="spacer"></span>
+  <div class="relative mr-20" >
+    <button mat-button (click)="toggleMenu()" class="text-white hover:text-gray-300 focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+        <path d="M7 10l5 5 5-5z" />
+      </svg>
+    </button>
+    <div *ngIf="isMenuOpen" class="absolute right-0 mt-2 w-auto bg-white border border-gray-300 rounded shadow">
+      <button mat-menu-item (click)="login()" class="block px-6 py-2 text-gray-800 hover:bg-gray-100 focus:outline-none text-center">
+        <span class="flex items-center justify-center">
+          <img src="/assets/HomeImage/login.png"class="w-10 h-10 mr-5">
+           <span class="ml-3">Login</span>
+            <span class="ml-3"></span>
+             <span class="ml-3"></span>
+        </span>
+      </button>
+      <button mat-menu-item (click)="logout()" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 focus:outline-none text-center">
+        <span class="flex items-center justify-center">
+            <span class="ml-3"></span>
+           <img src="/assets/HomeImage/arrow.png"class="w-8 h-8 mr-2">
+           <span class="ml-7"></span>
+          Logout
+           <span class="ml-3"></span>
+            <span class="ml-3"></span>
+        </span>
+      </button>
+    </div>
+  </div>
     </mat-toolbar>
     <section>
       <router-outlet></router-outlet>
