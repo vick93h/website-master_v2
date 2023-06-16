@@ -20,6 +20,8 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatDividerModule } from "@angular/material/divider";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { HttpClientModule } from '@angular/common/http';
+import { NotFoundComponent } from './not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     ScienzeDelleCostruzioniComponent,
     ConferencesComponent,
     LectureSlidesComponent,
-    NollComponent
+    NollComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     MatCardModule,
     MatDividerModule,
     FlexLayoutModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

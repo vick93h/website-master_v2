@@ -2,3 +2,12 @@
     --tw-bg-opacity: 1;
     background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
+.mat-teal {
+  background-color: teal;
+  color: white;
+}
+.navbar-button {
+  margin-left: 20px;
+  background-color: midnightblue;
+  color: white;
+}

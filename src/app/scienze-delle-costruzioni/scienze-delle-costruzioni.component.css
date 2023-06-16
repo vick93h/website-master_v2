@@ -1,0 +1,42 @@
+.card-container {
+  display: grid;
+  gap: 100px;
+}
+
+.mat-card {
+  width: 512px;
+  height: 512px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mat-card-title {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-card-content {
+  flex: 1 1 300px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mat-card-actions {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .mat-card {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,30 +1,38 @@
 <p class="not-italic ... text-xl ... font-semibold ... text-center ... text-teal-800 ... my-5">Scienze Delle Costruzioni</p>
-<div class="container text-center">
-  <div class="row" style="margin-left: 4rem !important;">
-<div class="col-2 card text-center mb-3" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Tomo Zero</h5>
-    <p class="card-text">Analisi Lineare.</p>
-    <a href="/assets/GioBook/tomozero.pdf" class="btn btn-primary">Dowload</a>
-  </div>
-</div>
-    <div class="col-1"></div>
-    <div class="col-2 card text-center mb-3" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Tomo I</h5>
-        <p class="card-text">Cinematica ed Equilibrio.</p>
-        <a href="/assets/GioBook/tomoi.pdf" class="btn btn-primary">Dowload</a>
-      </div>
-    </div>
-    <div class="col-1"></div>
-    <div class="col-2 card text-center mb-3" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Tomo II</h5>
-        <p class="card-text"> Elasticità e Resistenza dei Materiali.</p>
-        <a href="/assets/GioBook/tomoii.pdf" class="btn btn-primary">Dowload</a>
-      </div>
-    </div>
-    <div class="col-1"></div>
-  </div>
-</div>
+<div class="card-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Tomo Zero</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      Analisi Lineare.
+    </mat-card-content>
+    <mat-card-actions  fxLayoutAlign="center">
+      <button mat-raised-button color="primary" (click)="downloadPDF('/assets/GioBook/tomozero.pdf')">Download PDF</button>
+    </mat-card-actions>
+  </mat-card>
 
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Tomo I</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      Cinematica ed Equilibrio.
+    </mat-card-content>
+    <mat-card-actions  fxLayoutAlign="center">
+      <button mat-raised-button color="primary" (click)="downloadPDF('/assets/GioBook/tomoi.pdf')">Download PDF</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Tomo II</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      Elasticità e Resistenza dei Materiali.
+    </mat-card-content>
+    <mat-card-actions  fxLayoutAlign="center">
+      <button mat-raised-button color="primary" (click)="downloadPDF('/assets/GioBook/deformazione.pdf')">Download PDF</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

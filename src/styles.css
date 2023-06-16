@@ -8,6 +8,8 @@ html, body {
   font-family: 'Roboto';
   padding: 0px;
   margin: 0px;
+  background-color:rgb(155, 148, 148);
+
 }
 
 .mat-sidenav-container  {
@@ -112,6 +114,12 @@ html, body {
     background: teal;
     color: #fff;
   }
+  .mat-sidenav-container .mat-sidenav{
+       background: teal;
+  }
 }
 
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

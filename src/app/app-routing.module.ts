@@ -7,6 +7,8 @@ import { ScienzeDelleCostruzioniComponent } from './scienze-delle-costruzioni/sc
 import { ConferencesComponent } from './conferences/conferences.component';
 import { LectureSlidesComponent } from './lecture-slides/lecture-slides.component';
 import { NollComponent } from './noll/noll.component';
+import { SelectedPublicationsComponent } from './selected-publications/selected-publications.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full'},
@@ -15,7 +17,10 @@ const routes: Routes = [
   { path: 'scienzeDelleCostruzioni', component:ScienzeDelleCostruzioniComponent },
   { path: 'conferences', component: ConferencesComponent },
   { path: 'lectureSlides', component: LectureSlidesComponent },
+  { path: 'selectedPubblications', component: SelectedPublicationsComponent },
   { path: 'noll_s', component: NollComponent },
+  //{ path: '**', redirectTo: '/errore', pathMatch: 'full' },
+  {path:'errore',component:NotFoundComponent},
   {path:'Home', component: HomeComponent}];
 
 @NgModule({

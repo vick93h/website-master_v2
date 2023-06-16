@@ -1,68 +1,50 @@
 <p class="not-italic ... text-xl ... font-semibold ... text-center ... text-teal-800 ... my-5">Lecture Notes</p>
-<!--<div class="container text-center">
-  <div class="row" style="margin-left: 4rem !important;">
-<div class="col-2 card text-center mb-3" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Geometry & Continuum Mechanics</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="/assets/GioBook/innsbruck_2014.pdf" class="btn btn-primary">Dowload</a>
-  </div>
-</div>
-    <div class="col-1"></div>
-    <div class="col-2 card text-center mb-3" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Continuum Mechanics on Manifolds</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="/assets/GioBook/cont_mech_manifolds.pdf" class="btn btn-primary">Dowload</a>
-      </div>
-    </div>
-    <div class="col-1"></div>
-    <div class="col-2 card text-center mb-3" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Geometria della Deformazione</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="/assets/GioBook/deformazione.pdf" class="btn btn-primary">Dowload</a>
-      </div>
-    </div>
-    <div class="col-1"></div>
-    <div class="col-3 card text-center mb-3" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Teoria delle Strutture</h5>
-        <p class="card-text">Parte I - Elementi di Analisi Lineare.</p>
-        <a href="/assets/GioBook/spazi.pdf" class="btn btn-primary">Dowload</a>
-      </div>
-    </div>
-  </div>
-</div>
--->
-<div class="content" fxLayout="row wrap" fxLayoutGap="70px grid">
-  <div
-    [fxFlex]="(100/gridColumns) + '%'"
-    fxFlex.xs="100%"
-    fxFlex.sm="50%"
-    fxLayout="row" fxLayoutAlign="stretch"
-    *ngFor="let num of title"
-  >
-    <mat-card class="mat-elevation-z4 title_center" >
-      <mat-card-header>
-        <mat-card-title fxLayout="row" fxLayoutAlign="stretch">{{num}}</mat-card-title>
-      </mat-card-header>
-      <img mat-card-image src="/assets/HomeImage/pdf.png" width="64" height="64"/>
-      <mat-card-content>
-        <p>
-          Some text content
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <div fxFlex></div>
-        <!--
-        <div fxFlex></div>
-        <button mat-raised-button color="success">Dowload</button>
-        <div fxFlex></div>-->
-        <a href="/assets/GioBook/spazi.pdf" class="btn btn-primary">Dowload</a>
-        <div fxFlex></div>
-      </mat-card-actions>
-    </mat-card>
-  </div>
-</div>
+<div class="card-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Geometry & Continuum Mechanics</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      Content of card 1.
+    </mat-card-content>
+    <mat-card-actions  fxLayoutAlign="center">
+      <button mat-raised-button color="primary" (click)="downloadPDF('/assets/GioBook/innsbruck_2014.pdf')">Download PDF</button>
+    </mat-card-actions>
+  </mat-card>
 
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Continuum Mechanics on Manifolds</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      Content of card 2.
+    </mat-card-content>
+    <mat-card-actions  fxLayoutAlign="center">
+      <button mat-raised-button color="primary" (click)="downloadPDF('/assets/GioBook/cont_mech_manifolds.pdf')">Download PDF</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Geometria della Deformazione</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      Content of card 3.
+    </mat-card-content>
+    <mat-card-actions  fxLayoutAlign="center">
+      <button mat-raised-button color="primary" (click)="downloadPDF('/assets/GioBook/deformazione.pdf')">Download PDF</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Teoria delle Strutture</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      Parte I - Elementi di Analisi Lineare.
+    </mat-card-content>
+    <mat-card-actions  fxLayoutAlign="center">
+      <button mat-raised-button color="primary" (click)="downloadPDF('/assets/GioBook/spazi.pdf')">Download PDF</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

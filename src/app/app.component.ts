@@ -11,7 +11,18 @@ export class AppComponent implements OnInit,AfterViewInit{
   ngOnInit(): void {
 
   }
+  isMenuOpen: boolean = false;
 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+  login()
+  {
+
+  }
+  logout(){
+
+  }
 
   ngAfterViewInit(): void {
   }
