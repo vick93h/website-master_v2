@@ -11,3 +11,7 @@
   background-color: midnightblue;
   color: white;
 }
+.left-aligned {
+  display: flex;
+  justify-content: flex-start;
+}
