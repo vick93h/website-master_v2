@@ -9,6 +9,7 @@ import { LectureSlidesComponent } from './lecture-slides/lecture-slides.componen
 import { NollComponent } from './noll/noll.component';
 import { SelectedPublicationsComponent } from './selected-publications/selected-publications.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { BackOfficeComponent } from './back-office/back-office.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full'},
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'lectureSlides', component: LectureSlidesComponent },
   { path: 'selectedPubblications', component: SelectedPublicationsComponent },
   { path: 'noll_s', component: NollComponent },
+  { path: 'backOffice', component: BackOfficeComponent},
   { path: '**', redirectTo: '/errore', pathMatch: 'full' },
   {path:'errore',component:NotFoundComponent}
  ];

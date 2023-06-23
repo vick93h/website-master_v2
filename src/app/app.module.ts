@@ -22,6 +22,7 @@ import { MatDividerModule } from "@angular/material/divider";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { BackOfficeComponent } from './back-office/back-office.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ConferencesComponent,
     LectureSlidesComponent,
     NollComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    BackOfficeComponent
   ],
   imports: [
     BrowserModule,
